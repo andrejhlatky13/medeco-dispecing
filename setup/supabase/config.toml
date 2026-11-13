@@ -1,0 +1,9 @@
+# Konfigurácia Edge Functions pre MEDEKO Dispečing.
+# bootstrap musí byť volateľný bez prihlásenia (iba kým neexistuje dispečer).
+project_id = "REPLACE_WITH_PROJECT_REF"
+
+[functions.admin-users]
+verify_jwt = true
+
+[functions.bootstrap]
+verify_jwt = false

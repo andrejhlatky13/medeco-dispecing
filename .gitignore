@@ -1,0 +1,11 @@
+.secrets/
+research/
+.venv/
+*.pyc
+__pycache__/
+# never commit service keys or PATs
+**/service_role*
+**/.supabase_token
+**/db_pass
+MEDECO-dispecing.zip
+logo-128.png
