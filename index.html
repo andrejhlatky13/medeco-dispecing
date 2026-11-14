@@ -61,7 +61,7 @@ const ST={nova:'Nová',prebieha:'Prebieha',hotovo:'Hotovo'};
 const today=()=>{const d=new Date();return new Date(d-d.getTimezoneOffset()*6e4).toISOString().slice(0,10)};
 const now=()=>new Date().toTimeString().slice(0,5);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const SB_URL='__SB_URL__',SB_KEY='__SB_KEY__';
+const SB_URL='https://lalncqopvezjrhivhlen.supabase.co',SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhbG5jcW9wdmV6anJoaXZobGVuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQ1NzU3NjAsImV4cCI6MjExMDE1MTc2MH0.d__zj387qxFZH05zu_JHvvGtI3OdsM1mvkaFj_gj_rk';
 const SB_READY=SB_URL.startsWith('https://')&&SB_KEY.length>20&&!SB_URL.includes('YOUR_')&&!SB_KEY.includes('YOUR_');
 const sb=SB_READY?supabase.createClient(SB_URL,SB_KEY):null;
 
